@@ -1,0 +1,12 @@
+# Specify absolute paths to files/directories, and use /home/... instead of /panfs/...  For some reason, singularity is now having bind issues with use of latter.
+samples:
+    SAMEA3136700: "input/SAMEA3136700"
+    SAMEA3136701: "input/SAMEA3136701"
+    SAMEA3178942: "input/SAMEA3178942"
+    SAMEA3178944: "input/SAMEA3178944"
+    
+    
+run_settings:
+  local_run: 'false'
+  cluster_config: 'config/cluster.yaml'
+  scheduler: 'sbatch'

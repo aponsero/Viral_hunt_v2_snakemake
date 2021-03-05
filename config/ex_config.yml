@@ -1,0 +1,14 @@
+# Specify absolute paths to files/directories, and use /home/... instead of /panfs/...  For some reason, singularity is now having bind issues with use of latter.
+samples:
+    SAMEA3879568: "test/SAMEA3879568"
+    
+    
+#dir:
+#  main: "/home/spectorl/pmonnaha/ancestry/" 
+#  scratch: "/scratch.global/pmonnaha/"
+#  out: "/scratch.global/pmonnaha/snakemake_testing/"
+#  code: './scripts/'
+run_settings:
+  local_run: 'false'
+  cluster_config: 'config/cluster.yaml'
+  scheduler: 'pbs'
